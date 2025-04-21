@@ -1,0 +1,63 @@
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card shadow border-0">
+        <div class="card-body">
+          <h4 class="text-center text-primary mb-4">Edit Contact</h4>
+
+          <form (ngSubmit)="updateContact()">
+            <div class="mb-3">
+              <label class="form-label">First Name</label>
+              <input
+                type="text"
+                class="form-control"
+                [(ngModel)]="contact.fName"
+                name="fName"
+                required
+              />
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Last Name</label>
+              <input
+                type="text"
+                class="form-control"
+                [(ngModel)]="contact.lName"
+                name="lName"
+                required
+              />
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Phone Number</label>
+              <input
+                type="tel"
+                class="form-control"
+                [(ngModel)]="contact.phoneNumber"
+                name="phoneNumber"
+                required
+              />
+            </div>
+
+            <div class="mb-4">
+              <label class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                [(ngModel)]="contact.email"
+                name="email"
+                required
+              />
+            </div>
+
+            <div class="d-grid">
+              <button type="submit" class="btn btn-primary px-4 py-2">
+                Save Changes
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

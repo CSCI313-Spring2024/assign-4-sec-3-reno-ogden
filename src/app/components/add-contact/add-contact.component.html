@@ -1,0 +1,71 @@
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card shadow-sm border-0">
+        <div class="card-body">
+          <h4 class="text-center text-success mb-4">Add New Contact</h4>
+
+          <form (ngSubmit)="addContact()">
+            <div class="mb-3">
+              <label for="fName" class="form-label">First Name</label>
+              <input
+                type="text"
+                id="fName"
+                class="form-control"
+                [(ngModel)]="fName"
+                name="fName"
+                placeholder="Enter first name"
+                required
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="lName" class="form-label">Last Name</label>
+              <input
+                type="text"
+                id="lName"
+                class="form-control"
+                [(ngModel)]="lName"
+                name="lName"
+                placeholder="Enter last name"
+                required
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="phoneNumber" class="form-label">Phone Number</label>
+              <input
+                type="tel"
+                id="phoneNumber"
+                class="form-control"
+                [(ngModel)]="phoneNumber"
+                name="phoneNumber"
+                placeholder="e.g. 701-000-1000"
+                required
+              />
+            </div>
+
+            <div class="mb-4">
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="email"
+                id="email"
+                class="form-control"
+                [(ngModel)]="email"
+                name="email"
+                placeholder="email@domain.com"
+                required
+              />
+            </div>
+
+            <div class="d-grid">
+              <button type="submit" class="btn btn-success px-4 py-2">
+                Add Contact
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

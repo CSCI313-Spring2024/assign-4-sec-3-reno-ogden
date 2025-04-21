@@ -1,0 +1,12 @@
+<div class="container mt-5">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h2 class="text-dark">Contact List</h2>
+    <a [routerLink]="['/add']" class="btn btn-success px-4">Add Contact +</a>
+  </div>
+
+  <div class="row gy-4">
+    <div class="col-sm-12 col-md-6 col-lg-4" *ngFor="let contact of contacts()">
+      <app-contact-card [contact]="contact"></app-contact-card>
+    </div>
+  </div>
+</div>

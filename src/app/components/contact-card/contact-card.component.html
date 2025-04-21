@@ -1,0 +1,23 @@
+<div class="card h-100 shadow-sm border border-light-subtle">
+  <div class="card-body bg-white text-center">
+    <h4 class="text-primary mb-3">{{ contact.fName }} {{ contact.lName }}</h4>
+
+    <p class="mb-2"><strong>Phone:</strong> {{ contact.phoneNumber }}</p>
+    <p class="mb-3"><strong>Email:</strong> {{ contact.email }}</p>
+
+    <div class="d-flex justify-content-center gap-2">
+      <button
+        class="btn btn-sm btn-outline-primary px-4"
+        (click)="editContact()"
+      >
+        Edit
+      </button>
+      <button
+        class="btn btn-outline-danger btn-sm px-4"
+        (click)="deleteContact()"
+      >
+        Delete
+      </button>
+    </div>
+  </div>
+</div>
